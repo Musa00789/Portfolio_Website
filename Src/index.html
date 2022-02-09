@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./components/images/favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./components/style.css" />
+    <title>Musa</title>
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <p class="logo">M & D</p>
+        <br />
+        <p class="web-title">Not Your Average Web-Developer</p>
+      </div>
+    </header>
+    <nav>
+      <div id="navbar">
+        <ul class="list-style">
+          <li class="list-display">
+            <a href="#About" class="list-btn">About</a>
+          </li>
+          <li class="list-display">
+            <a href="#Articles" class="list-btn">Articles</a>
+          </li>
+          <li class="list-display">
+            <a href="#Contact" class="list-btn">Contact</a>
+          </li>
+          <li class="list-display">
+            <p class="floater">
+              <a
+                href="https://www.instagram.com/musa.dar_/"
+                class="fa fa-instagram"
+              ></a>
+            </p>
+          </li>
+          <li class="list-display">
+            <p class="floater">
+              <a href="https://github.com/Musa00789" class="fa fa-github"></a>
+            </p>
+          </li>
+          <li class="list-display">
+            <p class="floater">
+              <a
+                href="https://www.facebook.com/musa.dar.5059/"
+                class="fa fa-facebook"
+              ></a>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section>
+      <div  id="About" class="about">
+        <div>
+          <h1  class="about-title">About M & D</h1>
+          <p class="about-info">
+            Since beginning my journey in this field, my dedication to the work
+            and motivation to grow has led me to exceptional projects and
+            experiences. I am an Application and Web Developer. Take a moment to
+            explore my portfolio below, which includes a combination of
+            collaborations, solo works, and side projects. Don’t hesitate to
+            reach out if you’d like to learn more.
+          </p>
+        </div>
+        <div>
+          <img
+            class="about-img"
+            src="./components/images/about-img.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div>
+        <p class="quote">
+          "The things we know the best are the things we haven't been taught"
+        </p>
+      </div>
+
+      <div>
+        <h1 id="Articles" class="articles">My Articles</h1>
+      </div>
+      <div>
+        <h1 id="Contact" class="contact">Contact</h1>
+        <div class="form-contact">
+          <form class="form" action="mailto:mmusadar@gmail.com" method="GET">
+            <label class="label" >Name</label><br />
+            <input
+              class="input"
+              type="text"
+              id="fname"
+              name="name"
+              maxlength="50"
+              placeholder="Enter your name"
+            /><br />
+            <label class="label" for="email">Email</label><br />
+            <input
+              class="input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+            /><br />
+            <label class="label" for="subject">Subject</label><br />
+            <input
+              class="input"
+              type="text"
+              id="subject"
+              name="subject"
+              maxlength="100"
+              placeholder="Type the subject"
+            /><br />
+            <label class="label" for="message">Message</label><br />
+            <textarea
+              class="input"
+              id="message"
+              maxlength="500"
+              name="message"
+              rows="5"
+              placeholder="Type your message here..."
+            ></textarea
+            ><br />
+            <input type="submit" value="Submit" class="form-btn" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-txt">
+      <p>©2021 by Musa. All rights reserved.</p>
+      <br />
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-github"></a>
+      <a href="#" class="fa fa-facebook"></a>
+    </footer>
+
+    <script src="./components/script.js"></script>
+  </body>
+</html>

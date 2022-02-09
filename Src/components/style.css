@@ -1,0 +1,265 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* top,right,bottom,left */
+.header {
+  background-color: #a9a9a9;
+}
+.logo {
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 100px;
+  padding: 15px;
+  color: black;
+  letter-spacing: 3px;
+}
+.logo:hover {
+  opacity: 0.8;
+}
+.web-title {
+  background-color: transparent;
+  font-size: 40px;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 80px;
+  letter-spacing: 10px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+.list-style {
+  list-style-type: none;
+  padding: 15px;
+  background-color: #e0e0e0;
+}
+.list-display {
+  display: inline;
+  background-color: #e0e0e0;
+  padding: 4px;
+  text-decoration: none;
+}
+.list-btn {
+  padding: 4px 0px;
+  cursor: pointer;
+  background-color: transparent;
+  letter-spacing: 2px;
+  border-color: transparent;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+}
+.list-btn:hover {
+  opacity: 0.8;
+}
+.fa {
+  font-size: 15px;
+  border-color: transparent;
+  border-radius: 100px;
+  text-decoration: none;
+  padding: 5px;
+}
+.floater {
+  float: right;
+}
+.fa-facebook {
+  align-items: center;
+  margin-top: 4px;
+  background: transparent;
+  color: black;
+  font-size: 18px;
+}
+.fa:hover {
+  opacity: 0.8;
+}
+.fa-github {
+  align-items: center;
+  font-size: 18px;
+  margin-top: 4px;
+  background: transparent;
+  color: black;
+}
+.fa-instagram {
+  align-items: center;
+  font-size: 18px;
+  margin-top: 4px;
+  background: transparent;
+  color: black;
+}
+.about {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid black;
+  border-right: 4px solid black;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+.about-title {
+  text-align: center;
+  padding: 14px;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+.about-info {
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-size: 16px;
+  padding: 25px;
+}
+.about-img {
+  width: 400px;
+  height: 600px;
+  padding: 14px;
+}
+.quote {
+  font-size: 22px;
+  background-color: #e0e0e0;
+  text-align: center;
+  padding: 150px;
+}
+.articles {
+  text-align: center;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+.contact {
+  text-align: center;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 4px;
+  margin: 30px;
+}
+.form-contact {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.form {
+  margin: 0px 0px 0px 50px;
+}
+.label {
+  font-size: 18px;
+  font-weight: 100;
+}
+.input {
+  border: 1px solid black;
+  border-color: transparent transparent black transparent;
+  border-radius: 15px;
+  margin: 12px;
+  font-size: 18px;
+  padding: 10px;
+  width: 400px;
+}
+.input:hover {
+  border-color: black;
+}
+.form-btn {
+  text-align: center;
+  padding: 4px 0px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  border-color: transparent;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 10px 175px;
+}
+.form-btn:hover {
+  opacity: 0.8;
+}
+.footer-txt {
+  background-color: #e0e0e0;
+  margin-top: 40px;
+  padding: 150px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+
+@media only screen and (min-width: 600px) {
+  .about {
+    flex-direction: column;
+  }
+  .form {
+    margin: 0px 0px 0px 150px;
+  }
+  .input {
+    width: 350px;
+  }
+  .form-btn {
+    margin-right: 30px;
+    margin-left:5px;
+    padding: 10px 150px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .about {
+    flex-direction: column;
+  }
+  .form {
+    margin: 0px 0px 0px 150px;
+  }
+  .input {
+    width: 400px;
+  }
+  .form-btn {
+    margin-right: 30px;
+    padding: 10px 175px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .about {
+    flex-direction: row;
+  }
+  .form {
+    margin: 0px 0px 0px 150px;
+  }
+  .input {
+    width: 600px;
+  }
+  .form-btn {
+    margin-right: 30px;
+    padding: 10px 275px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .about {
+    flex-direction: row;
+  }
+  .form-contact {
+    margin-left: 150px;
+  }
+  .form {
+    margin: 0px 0px 0px 150px;
+  }
+  .input {
+    width: 800px;
+  }
+  .form-btn {
+    margin-right: 30px;
+    padding: 10px 375px;
+  }
+}
