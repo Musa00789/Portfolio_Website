@@ -111,7 +111,7 @@
 .about-title {
   text-align: center;
   padding: 14px;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 2px;
 }
 .about-info {
@@ -135,23 +135,33 @@
 .articles {
   text-align: center;
   padding: 10px;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 30px;
   letter-spacing: 4px;
+  text-decoration: underline;
+}
+.articalInfo {
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-size: 26px;
+  padding: 25px;
 }
 .contact {
   text-align: center;
   padding: 10px;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 30px;
   letter-spacing: 4px;
   margin: 30px;
+  text-decoration: underline;
+}
+.contactContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .form-contact {
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 40px;
   margin-bottom: 10px;
 }
@@ -169,7 +179,7 @@
   margin: 12px;
   font-size: 18px;
   padding: 10px;
-  width: 400px;
+  width: 600px;
 }
 .input:hover {
   border-color: black;
@@ -184,7 +194,7 @@
   text-decoration: none;
   color: white;
   background-color: black;
-  padding: 10px 175px;
+  /* padding: 10px 175px; */
 }
 .form-btn:hover {
   opacity: 0.8;
@@ -199,19 +209,39 @@
   font-size: 13px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 300px) {
   .about {
     flex-direction: column;
   }
-  .form {
-    margin: 0px 0px 0px 150px;
+  .contactContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   .input {
     width: 350px;
   }
   .form-btn {
     margin-right: 30px;
-    margin-left:5px;
+    margin-left: 5px;
+    padding: 10px 150px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .about {
+    flex-direction: column;
+  }
+  .contactContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .input {
+    width: 350px;
+  }
+  .form-btn {
+    margin-right: 30px;
+    margin-left: 5px;
     padding: 10px 150px;
   }
 }
@@ -219,8 +249,10 @@
   .about {
     flex-direction: column;
   }
-  .form {
-    margin: 0px 0px 0px 150px;
+  .contactContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   .input {
     width: 400px;
@@ -234,32 +266,33 @@
   .about {
     flex-direction: row;
   }
-  .form {
-    margin: 0px 0px 0px 150px;
+  .contactContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   .input {
-    width: 600px;
+    width: 500px;
   }
   .form-btn {
     margin-right: 30px;
-    padding: 10px 275px;
+    padding: 10px 225px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .about {
     flex-direction: row;
   }
-  .form-contact {
-    margin-left: 150px;
-  }
-  .form {
-    margin: 0px 0px 0px 150px;
+  .contactContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   .input {
-    width: 800px;
+    width: 600px;
   }
   .form-btn {
     margin-right: 30px;
-    padding: 10px 375px;
+    padding: 10px 270px;
   }
 }
